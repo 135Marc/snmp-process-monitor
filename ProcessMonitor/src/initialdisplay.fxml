@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="246.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InitialDisplay">
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="574.0">
+         <children>
+            <TextField fx:id="ipField" layoutX="68.0" layoutY="65.0" />
+            <Label layoutX="68.0" layoutY="35.0" prefHeight="16.0" prefWidth="170.0" text="IP Address" />
+            <TextField fx:id="portField" layoutX="274.0" layoutY="65.0" />
+            <Label layoutX="282.0" layoutY="35.0" prefHeight="16.0" prefWidth="170.0" text="Port" />
+            <Button layoutX="198.0" layoutY="365.0" mnemonicParsing="false" onAction="#addAgent" prefHeight="35.0" prefWidth="186.0" text="Add Agent" />
+            <TextField fx:id="comField" layoutX="74.0" layoutY="144.0" />
+            <Label layoutX="71.0" layoutY="114.0" prefHeight="16.0" prefWidth="170.0" text="Community String" />
+            <Label layoutX="280.0" layoutY="119.0" prefHeight="16.0" prefWidth="170.0" text="Polling Period (seconds)" />
+            <ChoiceBox fx:id="pollperiod" layoutX="281.0" layoutY="145.0" prefWidth="150.0" />
+            <Label layoutX="81.0" layoutY="192.0" prefHeight="16.0" prefWidth="117.0" text="Polling Type" />
+            <ChoiceBox fx:id="polltype" layoutX="81.0" layoutY="224.0" onMouseClicked="#changeState" prefWidth="150.0" />
+            <TextField fx:id="nonRepeaters" disable="true" layoutX="285.0" layoutY="223.0" prefHeight="28.0" prefWidth="74.0" />
+            <Label layoutX="282.0" layoutY="191.0" prefHeight="16.0" prefWidth="117.0" text="Non Repeaters" />
+            <TextField fx:id="maxRepeats" disable="true" layoutX="413.0" layoutY="223.0" prefHeight="28.0" prefWidth="74.0" />
+            <Label layoutX="394.0" layoutY="192.0" prefHeight="16.0" prefWidth="117.0" text="Max Repetitions" />
+            <CheckBox fx:id="checkBox" layoutX="89.0" layoutY="301.0" mnemonicParsing="false" onAction="#clicked" text="Multi-Threaded" />
+            <TextField fx:id="threadN" disable="true" layoutX="285.0" layoutY="305.0" prefHeight="17.0" prefWidth="74.0" />
+            <Label layoutX="275.0" layoutY="271.0" prefHeight="16.0" prefWidth="131.0" text="Number of Threads" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

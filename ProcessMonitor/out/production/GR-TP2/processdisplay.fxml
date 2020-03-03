@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProcessDisplay">
+   <children>
+      <Pane onMouseEntered="#refreshTest" onMouseMoved="#refreshTest" prefHeight="675.0" prefWidth="951.0">
+         <children>
+            <TableView fx:id="tableproc" layoutX="14.0" layoutY="38.0" prefHeight="541.0" prefWidth="902.0" />
+            <MenuBar prefHeight="16.0" prefWidth="934.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Export">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#export_MeasuresHTML" text="HTML" />
+                        <MenuItem mnemonicParsing="false" onAction="#export_MeasuresXML" text="XML" />
+                        <MenuItem mnemonicParsing="false" onAction="#export_MeasureBinary" text="Binary" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#showPerf" text="Performance View" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="93.0" layoutY="595.0" prefHeight="16.0" prefWidth="146.0" text="Number of processes:" />
+            <Label layoutX="93.0" layoutY="625.0" prefHeight="16.0" prefWidth="146.0" text="Memory Size (KB): " />
+            <Label fx:id="procn" layoutX="264.0" layoutY="595.0" prefHeight="16.0" prefWidth="279.0" text="0" />
+            <Label fx:id="mem" layoutX="264.0" layoutY="625.0" prefHeight="16.0" prefWidth="455.0" text="0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

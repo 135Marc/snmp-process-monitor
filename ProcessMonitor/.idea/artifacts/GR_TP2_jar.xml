@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GR-TP2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GR_TP2_jar</output-path>
+    <root id="archive" name="GR-TP2.jar">
+      <element id="module-output" name="GR-TP2" />
+      <element id="extracted-dir" path="$USER_HOME$/Documentos/Cadeiras/19-20/Perfis/GVR/Semestre1/GR/TPs/snmp4j-3.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documentos/Cadeiras/19-20/Perfis/GVR/Semestre1/GR/TPs/snmp4j-agentx-3.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Documentos/Cadeiras/19-20/Perfis/GVR/Semestre1/GR/TPs/snmp4j-agent-3.2.2.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
